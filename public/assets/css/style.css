@@ -1,0 +1,19 @@
+#layout-first{
+    width: 255px;
+    height: 1234px;
+    background-color: #363740;
+}
+
+#layout-second{
+    width: 1185px;
+    height: 1234px;
+    background-color: #F7F8FC;
+}
+
+.nav1{
+    height: 121.6px;
+}
+
+.nav2{
+    height: 60.8px;
+}
