@@ -1,13 +1,28 @@
+#wrapper{
+    width: 1440px;
+    display: flex;
+}
+
 #layout-first{
     width: 255px;
     height: 1234px;
     background-color: #363740;
+    color: grey;
 }
 
 #layout-second{
     width: 1185px;
     height: 1234px;
     background-color: #F7F8FC;
+}
+
+.layout-img{
+    margin: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
 }
 
 .nav1{
