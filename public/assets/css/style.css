@@ -46,16 +46,7 @@ a{
     margin-right: 20px;
 }
 
-
-/* mobile */
-@media (max-width: 932px){
-    #wrapper{
-        width: 100%;
-        height: auto;
-    }  
-}
-
-/* 모바일 화면에서 메뉴를 드롭다운 형태로 보여줌 */
+/* Mobile */
 @media screen and (max-width: 768px) {
     .menu {
       display: none;
@@ -65,7 +56,7 @@ a{
     }
   }
   
-  /* 데스크탑 화면에서 메뉴를 수평으로 나열하여 보여줌 */
+  /* Desktop */
   @media screen and (min-width: 769px) {
     .menu {
       display: block;
