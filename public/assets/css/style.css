@@ -13,7 +13,7 @@
 #layout-second{
     width: 1185px;
     height: 1234px;
-    background-color: #F7F8FC;
+    /* background-color: #F7F8FC; */
 }
 
 .layout-img{
@@ -25,10 +25,23 @@ a{
     color: grey;
 }
 
+#nav{
+    margin-top: 35px;
+}
+
 .nav1{
     height: 121.6px;
+    font-weight: bold;
 }
 
 .nav2{
     height: 60.8px;
+}
+
+.nav1 svg{
+    margin-right: 10px;
+}
+
+.nav2 svg{
+    margin-right: 20px;
 }
