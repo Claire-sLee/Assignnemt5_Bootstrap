@@ -52,37 +52,25 @@ a {
     margin-right: 20px;
 }
 
-/* 화면이 768px 이상일 때만 */
-@media (min-width: 768px) {
-    #wrapper {
-        flex-direction: row;
-    }
-
-    #layout-first {
-        width: 255px;
-    }
-
-    #layout-second {
-        width: calc(100% - 255px);
-    }
-}
-
-/* 화면이 992px 이상일 때 */
-@media (min-width: 992px) {
-    #wrapper {
-        max-width: 1200px;
-    }
-}
 
 /* 화면이 767px 이하일 때 */
 @media (max-width: 767px) {
     #layout-first {
         width: 100%;
     }
+<<<<<<< HEAD
 
     #layout-second {
         width: 100%;
         padding: 15px;
+=======
+  }
+  
+  /* Desktop */
+  @media screen and (min-width: 769px) {
+    .menu {
+      display: block;
+>>>>>>> 47a458e647b17abf72aecc11a00e8108fc8f9103
     }
 
     #wrapper {
