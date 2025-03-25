@@ -1,77 +1,91 @@
-#wrapper{
-    width: 1440px;
+/* 기본 스타일 */
+#wrapper {
+    width: 100%;
+    max-width: 1440px;
     display: flex;
+    flex-wrap: wrap;
 }
 
-#layout-first{
+#layout-first {
     width: 255px;
     height: 1234px;
     background-color: #363740;
     color: grey;
 }
 
-#layout-second{
-    width: 1185px;
-    height: 1234px;
-    /* background-color: #F7F8FC; */
+#layout-second {
+    flex-grow: 1;
+    height: auto;
+    background-color: #F7F8FC;
+    padding: 25px;
 }
 
-.layout-img{
+.layout-img {
     margin: 25px;
+    max-width: 100%; /* 부모 영역에 맞게 이미지 크기 자동 조정 */
+    height: auto; /* 이미지의 비율을 유지한 채 높이를 자동으로 설정 */
 }
 
-a{
+a {
     text-decoration: none;
     color: grey;
 }
 
-#nav{
+#nav {
     margin-top: 35px;
 }
 
-.nav1{
+.nav1 {
     height: 121.6px;
     font-weight: bold;
 }
 
-.nav2{
+.nav2 {
     height: 60.8px;
 }
 
-.nav1 svg{
+.nav1 svg {
     margin-right: 10px;
 }
 
-.nav2 svg{
+.nav2 svg {
     margin-right: 20px;
 }
 
+/* 화면이 768px 이상일 때만 */
+@media (min-width: 768px) {
+    #wrapper {
+        flex-direction: row;
+    }
 
-/* mobile */
-@media (max-width: 932px){
-    #wrapper{
-        width: 100%;
-        height: auto;
-    }  
+    #layout-first {
+        width: 255px;
+    }
+
+    #layout-second {
+        width: calc(100% - 255px);
+    }
 }
 
-/* 모바일 화면에서 메뉴를 드롭다운 형태로 보여줌 */
-@media screen and (max-width: 768px) {
-    .menu {
-      display: none;
+/* 화면이 992px 이상일 때 */
+@media (min-width: 992px) {
+    #wrapper {
+        max-width: 1200px;
     }
-    .dropdown-menu {
-      display: block;
+}
+
+/* 화면이 767px 이하일 때 */
+@media (max-width: 767px) {
+    #layout-first {
+        width: 100%;
     }
-  }
-  
-  /* 데스크탑 화면에서 메뉴를 수평으로 나열하여 보여줌 */
-  @media screen and (min-width: 769px) {
-    .menu {
-      display: block;
+
+    #layout-second {
+        width: 100%;
+        padding: 15px;
     }
-    .dropdown-menu {
-      display: none;
+
+    #wrapper {
+        flex-direction: column;
     }
-  }
-  
+}
