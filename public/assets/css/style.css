@@ -58,19 +58,17 @@ a {
     #layout-first {
         width: 100%;
     }
-<<<<<<< HEAD
 
     #layout-second {
         width: 100%;
         padding: 15px;
-=======
   }
+}
   
   /* Desktop */
   @media screen and (min-width: 769px) {
     .menu {
       display: block;
->>>>>>> 47a458e647b17abf72aecc11a00e8108fc8f9103
     }
 
     #wrapper {
