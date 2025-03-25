@@ -1,4 +1,3 @@
-/* 기본 스타일 */
 #wrapper {
     width: 100%;
     max-width: 1440px;
@@ -22,8 +21,8 @@
 
 .layout-img {
     margin: 25px;
-    max-width: 100%; /* 부모 영역에 맞게 이미지 크기 자동 조정 */
-    height: auto; /* 이미지의 비율을 유지한 채 높이를 자동으로 설정 */
+    max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -53,7 +52,7 @@ a {
 }
 
 
-/* 화면이 767px 이하일 때 */
+/* max-width: 767px */
 @media (max-width: 767px) {
     #layout-first {
         width: 100%;
